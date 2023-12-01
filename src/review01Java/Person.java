@@ -11,11 +11,9 @@ class Person {
 		this.name = name;
 		this.age = age;
 	}
-	
 	static void PrintPersonDetails(Person people) {
 		System.out.println("Name is: " + people.name + ", age is: " + people.age);
 	}	
-	
 	// 4. Write a static method (findOldestPerson) that takes an array of Person objects 
 	// as a parameter and returns the Person object with the highest age.
 	static Person findOldestPerson(Person[] people) {
@@ -40,7 +38,6 @@ class Person {
 		}
 		System.out.println(Arrays.toString(people));
 	}
-	
 	@Override
 	public String toString() {
 		return this.name + this.age;

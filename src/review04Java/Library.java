@@ -3,35 +3,43 @@ package review04Java;
 import java.util.ArrayList;
 
 public class Library {
-	public static void main(String[] args) {
-
-		//Book inventory
-		ArrayList<Book> books;
-		//Add books to the library
-		}
-	//Method: Add books to the library
-	void addBook(String title, String author, int publicationYear, 
-			String genre, int numberOfPages) {
-	//Method: Display Available Books
-	void displayAvailableBook(ArrayList Book) {
-		
-		}
+	
+	// To store books
+	public ArrayList<Book> books;
+	
+	//Book에서 메소드 실행하기 위한 생성자 , ArrayList에 접근하기 위함
+	/**
+	public Library() {
+		this.books = new ArrayList<Book>();
+	}
+	*/
+	
+	//ArrayList - setter & getter
+	public void setArrayList(ArrayList books) {
+		this.books = books;
+	}
+	public ArrayList getArrayList() {
+		return books;
+	}
+	
+	//Method: add book to ArrayList
+	public void addBook(Book book){
+		books.add(book);
+	}
+	
+	//Method: update book in ArrayList
+	void updateBook(Book book) {
+		books.add(books.lastIndexOf(books), book);
+	}
+	
+	void removeBook(Book book) {
+		books.remove(book);		
+	}
+	
+	// CheckOut Method <-> searchBy title, author, genre
+	void checkOutBook(Book book) {
+	}
+	void checkInBook() {
 	}
 
-		
-		
-		/**
-		ArrayList<Book> books = new ArrayList<Book>();
-		Book book1 = new Book("A", "Me", 1950, "Comic", 500, true);
-		Book book2 = new Book("B", "She", 2010, "Fantasy", 200, false);
-		
-		books.add(book1);
-		books.add(book2);
-		
-		
-		for(Book book : books) {
-			System.out.println(book.getTitle());
-			*/
-
-
-	
+}

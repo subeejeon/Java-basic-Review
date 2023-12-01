@@ -25,7 +25,6 @@ public class Library {
 			book.displayBookTitle();
 		}
 	}
-	
 	// Method to find and return the book with the highest book ID
 	Book findHighestBookId() {
 		Book highstBook = null;

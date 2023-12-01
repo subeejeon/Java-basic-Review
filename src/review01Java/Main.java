@@ -19,8 +19,9 @@ public class Main {
 			}
 	System.out.println("=========");
 	Person.findOldestPerson(people); //null
+	
 	System.out.println("=========");
 	Person.firstYoungestPerson(people);
-		}
 
+	}	
 }
